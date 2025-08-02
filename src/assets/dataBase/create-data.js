@@ -25,6 +25,7 @@ console.log(JSON.parse(localStorage.getItem("pages")));
 let idHomeImg = 0;
 
 let homePage = {
+  heroTitle:"Welcome To Save The Children",
   heroImgs: [
     {
       id: ++idHomeImg,

@@ -1,17 +1,16 @@
 <script>
 import HeaderApp from "@/components/HeaderApp.vue";
-import MainSection from "@/components/MainSection.vue";
+import HomeHero from "@/components/homeHero.vue";
 
 export default {
   components: {
     HeaderApp,
-    MainSection,
+    HomeHero,
   },
 };
 </script>
 
 <template>
   <headerApp />
-  <MainSection />
-
+  <HomeHero />
 </template>
