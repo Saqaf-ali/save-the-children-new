@@ -25,13 +25,14 @@ console.log(JSON.parse(localStorage.getItem("pages")));
 let idHomeImg = 0;
 
 let homePage = {
-  heroTitle:"Welcome To Save The Children",
+  heroTitle: "Welcome To Save The Children",
   heroImgs: [
     {
       id: ++idHomeImg,
       src: "src/assets/images/articles/img7.webp",
       alt: "children are happy  ",
-      figcaption: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
+      figcaption:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
     },
     {
       id: ++idHomeImg,
@@ -40,7 +41,7 @@ let homePage = {
       figcaption: "Lorem ipsum dolor sit ametipsum dolor sit amet ",
     },
     {
-       id: ++idHomeImg,
+      id: ++idHomeImg,
       src: "src/assets/images/articles/img8.webp",
       alt: "children are happy  ",
       figcaption: "Lorem ipsum dolor sit amet ",
@@ -49,62 +50,64 @@ let homePage = {
       id: ++idHomeImg,
       src: "src/assets/images/articles/img4.webp",
       alt: "children are happy  ",
-      figcaption: "Lorem ipsum dolor sit ametconsectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
+      figcaption:
+        "Lorem ipsum dolor sit ametconsectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
     },
   ],
 };
 
-
 // about Page
+let idAboutImg = 0;
 let aboutPage = {
   name: "About",
   title: "About Us",
-  
-  description:"Poor African children who are very happy because Save the Children provided them with water.",
-  imgSection:[
-    {
-  src: "src/assets/images/about/img3.webp",
-  alt: "children are happy  ",
-    },
-    {
-  src: "src/assets/images/about/img2.webp",
-  alt: "children are happy  ",
-}
 
-  ],
-
-  heroImgs: [
+  description:
+    "Poor African children who are very happy because Save the Children provided them with water.",
+  imgSection: [
     {
-      id: ++idHomeImg,
+      id: ++idAboutImg,
       src: "src/assets/images/about/img3.webp",
       alt: "children are happy  ",
-      figcaption: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
     },
     {
-      id: ++idHomeImg,
-      src: "src/assets/images/about/img4.webp",
+      id: ++idAboutImg,
+      src: "src/assets/images/about/img2.webp",
       alt: "children are happy  ",
-      figcaption: "Lorem ipsum dolor sit ametipsum dolor sit amet ",
-    },
-    {
-       id: ++idHomeImg,
-      src: "src/assets/images/about/img5.webp",
-      alt: "children are happy  ",
-      figcaption: "Lorem ipsum dolor sit amet ",
-    },
-    {
-      id: ++idHomeImg,
-      src: "src/assets/images/articles/img4.webp",
-      alt: "children are happy  ",
-      figcaption: "Lorem ipsum dolor sit ametconsectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
     },
   ],
-};
+  imgsSection2: [
+    {
+      id: ++idAboutImg,
+      src: "src/assets/images/about/img3.webp",
+      alt: "children are happy  ",
+    },
+    {
+      id: ++idAboutImg,
+      src: "src/assets/images/about/img4.webp",
+      alt: "children are happy  ",
+    },
+    {
+      id: ++idAboutImg,
+      src: "src/assets/images/about/img5.webp",
+      alt: "children are happy  ",
+    },
+    {
+      id: ++idAboutImg,
+      src: "src/assets/images/about/img6.webp",
+      alt: "children are happy  ",
+    },
+    {
+      id: ++idAboutImg,
+      src: "src/assets/images/about/img7.webp",
+      alt: "children are happy  ",
+    },
+  ],
 
+
+};
 
 localStorage.setItem("homePage", JSON.stringify(homePage));
 localStorage.setItem("aboutPage", JSON.stringify(aboutPage));
 console.log("hero images of home page saved to local storage");
 console.log(JSON.parse(localStorage.getItem("homePage")));
-
-

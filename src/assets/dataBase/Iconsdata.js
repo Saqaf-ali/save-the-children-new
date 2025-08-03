@@ -1,9 +1,9 @@
 
 let iconsHeader = [
-  { name: "search", iconTag: "fas fa-search", link: "/search" },
-  { name: "langue", iconTag: "fa-solid fa-globe", link: "/lang" },
+  { name: "search", iconTag: "fas fa-search", link: "/" },
+  { name: "langue", iconTag: "fa-solid fa-globe", link: "/" },
   { name: "them", iconTag: "fa-solid fa-circle-half-stroke", link: "" },
-  { name: "user", iconTag: "fas fa-user", link: "/login" },
+  { name: "login", iconTag: "fas fa-user", link: "/login" },
 ];
 localStorage.setItem("iconsHeader", JSON.stringify(iconsHeader));
 
