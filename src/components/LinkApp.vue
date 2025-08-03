@@ -5,9 +5,10 @@ export default {
 </script>
 
 <template>
-  <a
+  <RouterLink
+    :to="link"
     class="hover:underline decoration-fuchsia-300 duration-150 visited:underline"
-    :href="link"
-    >{{ pageName }}</a
-  >
+ 
+    > {{ pageName }}
+  </RouterLink>
 </template>

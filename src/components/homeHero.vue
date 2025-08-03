@@ -15,5 +15,7 @@ export default {
 };
 </script>
 <template>
+    <section class="">
   <HeroSection :heroTitle="homePage.heroTitle" :heroImgs="homePage.heroImgs" />
+  </section>
 </template>

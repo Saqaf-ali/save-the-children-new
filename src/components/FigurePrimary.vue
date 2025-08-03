@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <figure class="bg-gray-800 rounded-t-3xl ">
+  <figure class="bg-black/60 border-b-2 border-fuchsia-200 rounded-t-3xl text-white ">
     <img class="w-full rounded-t-3xl h-48" :src="src" :alt="alt" />
     <figcaption class="p-4">
       {{ figcaption }}
