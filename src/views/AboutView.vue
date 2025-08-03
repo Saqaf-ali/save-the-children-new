@@ -1,8 +1,8 @@
 <template>
   <HeaderApp />
   <div class="relative h-screen">
-    <video 
-      :src="currentVideo" 
+    <video
+      :src="currentVideo"
       autoplay
       loop
       muted
@@ -66,8 +66,8 @@
         <!-- image -->
 
         <PrimaryImage class="md:col-span-2" widthAndHeight:="'w-full h-full'"
-        :src="aboutPage.imgsSection2[4].src " :alt="aboutPage.imgsSection2[4].alt
-        " />
+        :src="aboutPage.imgsSection2[4].src "
+        :alt="aboutPage.imgsSection2[4].alt " />
         <div class="textContent md:text-left">
           <ParagraphPrimary :paragraph="aboutPage.description" />
           <BtnSecondary :buttonName="'More'" :link="'/about'" />
@@ -79,11 +79,11 @@
 </template>
 
 <script>
-import BtnSecondary from '@/components/BtnSecondary.vue';
-import HeaderApp from '@/components/HeaderApp.vue';
-import ParagraphPrimary from '@/components/ParagraphPrimary.vue';
-import PrimaryImage from '@/components/PrimaryImage.vue';
-import SectionTitle from '@/components/SectionTitle.vue';
+import BtnSecondary from "@/components/BtnSecondary.vue";
+import HeaderApp from "@/components/HeaderApp.vue";
+import ParagraphPrimary from "@/components/ParagraphPrimary.vue";
+import PrimaryImage from "@/components/PrimaryImage.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
 
 export default {
   data() {
