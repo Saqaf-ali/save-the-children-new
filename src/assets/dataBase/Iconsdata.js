@@ -3,7 +3,7 @@ let iconsHeader = [
   { name: "search", iconTag: "fas fa-search", link: "/" },
   { name: "langue", iconTag: "fa-solid fa-globe", link: "/" },
   { name: "them", iconTag: "fa-solid fa-circle-half-stroke", link: "" },
-  { name: "login", iconTag: "fas fa-user", link: "/login" },
+  { name: "dashboard", iconTag: "fas fa-user", link: "/dashboard" },
 ];
 localStorage.setItem("iconsHeader", JSON.stringify(iconsHeader));
 

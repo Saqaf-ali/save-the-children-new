@@ -1,38 +1,52 @@
+<script>
+import HeaderApp from '@/components/HeaderApp.vue';
+
+export default {
+  data() {
+    return { pages: JSON.parse(localStorage.getItem("pages")) };
+  },
+  components: {
+    HeaderApp,
+  },
+  computed:{
+  deletePage(page){ 
+    this.pages.splice(this.pages.indexOf(page), 1);
+    localStorage.setItem("pages", JSON.stringify(this.pages));
+  }
+  },
+};
+</script>
+
 <template>
-    <div class="overflow-x-auto">
-  <table class="table table-zebra">
-    <!-- head -->
-    <thead>
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- row 1 -->
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
-      <!-- row 2 -->
-      <tr>
-        <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
-      </tr>
-      <!-- row 3 -->
-      <tr>
-        <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <HeaderApp/>
+  <div class="overflow-x-auto">
+    <table class="table table-zebra">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Source</th>
+          <th>Operation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="page in pages" :key="page.id">
+          <th>{{ page.id }}</th>
+          <th>{{ page.name }}</th> 
+          <th>{{ page.link }}</th>
+          <th class="flex justify-start gap-4 items-center   ">
+            <!-- fountwosam icon -->
+            <!-- delete icon -->
+
+            <i class="fa-solid fa-trash" style="color: #ff0000" :idPage="page.id" @click="deletePage(page)"></i>
+            <!-- edit icon -->
+            <i class="fa-solid fa-pen-to-square" style="color: #000000"></i>
+            <!-- add icon -->
+            <i class="fa-solid fa-plus" style="color: #000000"></i>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </template>
