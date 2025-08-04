@@ -37,6 +37,19 @@ localStorage.setItem("pages", JSON.stringify(pages));
 console.log("pages saved to local storage");
 console.log(JSON.parse(localStorage.getItem("pages")));
 
+
+/*
+==============
+pages deleted
+==============
+*/ 
+let deletedPages = [];
+localStorage.setItem("deletedPages", JSON.stringify(deletedPages));
+
+
+  
+
+
 let idHomeImg = 0;
 
 let homePage = {

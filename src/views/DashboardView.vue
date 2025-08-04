@@ -1,26 +1,45 @@
 <script>
-import HeaderApp from '@/components/HeaderApp.vue';
+import HeaderApp from "@/components/HeaderApp.vue";
+import AlertSuccess from "@/components/notifications/AlertSuccess.vue";
 
 export default {
   data() {
-    return { pages: JSON.parse(localStorage.getItem("pages")) };
+    return {
+      pages: JSON.parse(localStorage.getItem("pages")),
+      deletedPages: JSON.parse(localStorage.getItem("deletedPages")),
+
+      success: null,
+    };
   },
   components: {
     HeaderApp,
+    AlertSuccess,
   },
-  computed:{
-  deletePage(page){ 
-    this.pages.splice(this.pages.indexOf(page), 1);
-    localStorage.setItem("pages", JSON.stringify(this.pages));
-  }
+  methods: {
+    deletePage(page) {
+      let deletedItem = this.pages.splice(this.pages.indexOf(page), 1);
+      localStorage.setItem("pages", JSON.stringify(this.pages));
+      this.deletedPages.push(deletedItem);
+      // trash
+      localStorage.setItem("deletedPages", JSON.stringify(this.deletedPages));
+      this.success = "successfully deleted";
+      console.log("successfully deleted");
+
+      setTimeout(() => {
+        this.success = null;
+      }, 3000);
+    },
   },
 };
 </script>
 
 <template>
-  <HeaderApp/>
-  <div class="overflow-x-auto">
-    <table class="table table-zebra">
+  <AlertSuccess :success="success" />
+
+  <HeaderApp />
+
+  <div class="overflow-x-auto " v-if="pages.length > 0">
+    <table class="table table-zebra ">
       <!-- head -->
       <thead>
         <tr>
@@ -33,17 +52,21 @@ export default {
       <tbody>
         <tr v-for="page in pages" :key="page.id">
           <th>{{ page.id }}</th>
-          <th>{{ page.name }}</th> 
+          <th>{{ page.name }}</th>
           <th>{{ page.link }}</th>
-          <th class="flex justify-start gap-4 items-center   ">
-            <!-- fountwosam icon -->
+          <th class="flex justify-start gap-4 items-center">
             <!-- delete icon -->
 
-            <i class="fa-solid fa-trash" style="color: #ff0000" :idPage="page.id" @click="deletePage(page)"></i>
+            <i title="Deleted"
+              class="fa-solid fa-trash text-red-400 "
+   
+              :idPage="page.id"
+              @click="deletePage(page)"
+            ></i>
             <!-- edit icon -->
-            <i class="fa-solid fa-pen-to-square" style="color: #000000"></i>
+            <i title="Edit" class="fa-solid fa-pen-to-square text-gray-500  " ></i>
             <!-- add icon -->
-            <i class="fa-solid fa-plus" style="color: #000000"></i>
+            <i title="Add" class="fa-solid fa-plus text-gray-500" ></i>
           </th>
         </tr>
       </tbody>
