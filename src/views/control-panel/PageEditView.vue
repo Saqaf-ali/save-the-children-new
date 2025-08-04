@@ -2,16 +2,27 @@
 <script>
 export default {
   props: ["id"],
-  mounted() {
-    // console.log(JSON.parse(this.item));
-  }
+  data(){
+    return{pages: JSON.parse(localStorage.getItem("pages")),
+        page:null,
+    }
+  },
+  computed:{
+    getPageContent() {
+      return this.pages.find(p => p.id == this.id);
+    }
+    },
   
-};
+}
+//   let p=this.getPageContent();
+//   console.log(p);
+  
+
 // console.log(id);
 
 </script>
 
 <template>
-   {{ id}}
+   {{ getPageContent}}
      rrrrrrrrrrrrr
 </template>

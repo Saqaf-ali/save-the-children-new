@@ -2,6 +2,7 @@ let pagesId = 100;
 let pages = [
   {
     id: ++pagesId,
+    primaryName:'homePage',
     name: "Home",
     link: "/",
     title: "Save The Children",
@@ -9,16 +10,18 @@ let pages = [
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   },
   {
+    primaryName:"ourWorksPage",
     id: ++pagesId,
     name: "Our Works",
     link: "/our-works",
     title: "Our Works",
     description: "lorem   ",
-    title: "Our Products",
-    description: "lorem  ",
+ 
   },
   {
+
     id: ++pagesId,
+    primaryName:"aboutPage",
     name: "About",
     link: "/about",
     title: "About Us",
