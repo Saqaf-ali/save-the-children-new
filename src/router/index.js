@@ -39,6 +39,7 @@ const router = createRouter({
     },
     
     {
+      
       path: '/donate',
       name: 'donate',
       component: () => import('../views/DonateView.vue'),
