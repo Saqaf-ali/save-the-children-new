@@ -35,11 +35,17 @@ export default {
 
 <template>
   <AlertSuccess :success="success" />
-
   <HeaderApp />
 
-  <div class="overflow-x-auto " v-if="pages.length > 0">
-    <table class="table table-zebra ">
+  <!-- trash icon -->
+  <!-- <div class="flex justify-end px-10">
+    <RouterLink to="/control-panel/trash">
+      <i class="fa-solid fa-trash text-red-400 text-2xl"></i>
+    </RouterLink>
+  </div> -->
+
+  <div class="overflow-x-auto" v-if="pages.length > 0">
+    <table class="table table-zebra">
       <!-- head -->
       <thead>
         <tr>
@@ -57,16 +63,21 @@ export default {
           <th class="flex justify-start gap-4 items-center">
             <!-- delete icon -->
 
-            <i title="Deleted"
-              class="fa-solid fa-trash text-red-400 "
-   
+            <i
+              title="Deleted"
+              class="fa-solid fa-trash text-red-400"
               :idPage="page.id"
               @click="deletePage(page)"
             ></i>
             <!-- edit icon -->
-            <i title="Edit" class="fa-solid fa-pen-to-square text-gray-500  " ></i>
+
+            
+
+         
+<!-- <RouterLink to="" -->
+            <i title="Edit" class="fa-solid fa-pen-to-square text-gray-500"></i>
             <!-- add icon -->
-            <i title="Add" class="fa-solid fa-plus text-gray-500" ></i>
+            <i title="Add" class="fa-solid fa-plus text-gray-500"></i>
           </th>
         </tr>
       </tbody>

@@ -47,7 +47,12 @@ const router = createRouter({
     {
       path: '/dashboard',
       name: 'dashboard',
-      component: () => import('../views/DashboardView.vue'),
+      component: () => import('../views/control-panel/DashboardView.vue'),
+    },
+    {
+      path: '/pageEdit',
+      name: 'pageEdit',
+      component: () => import('../views/control-panel/pageEditView.vue'),
     },
 
    
