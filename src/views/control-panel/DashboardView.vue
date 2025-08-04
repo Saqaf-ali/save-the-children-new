@@ -1,5 +1,6 @@
 <script>
 import HeaderApp from "@/components/HeaderApp.vue";
+import EditRout from "@/components/icons/EditRout.vue";
 import AlertSuccess from "@/components/notifications/AlertSuccess.vue";
 
 export default {
@@ -14,9 +15,12 @@ export default {
   components: {
     HeaderApp,
     AlertSuccess,
+    EditRout,
   },
   methods: {
     deletePage(page) {
+      // console.log(page);
+      
       let deletedItem = this.pages.splice(this.pages.indexOf(page), 1);
       localStorage.setItem("pages", JSON.stringify(this.pages));
       this.deletedPages.push(deletedItem);
@@ -71,11 +75,11 @@ export default {
             ></i>
             <!-- edit icon -->
 
-            
+      <EditRout :path="'/pageEdit'" :id="page.id" />     
 
          
-<!-- <RouterLink to="" -->
-            <i title="Edit" class="fa-solid fa-pen-to-square text-gray-500 cursor-pointer"></i>
+
+
             <!-- add icon -->
             <i title="Add" class="fa-solid fa-plus text-gray-500  cursor-pointer"></i>
           </th>

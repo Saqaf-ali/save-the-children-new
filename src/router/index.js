@@ -39,7 +39,7 @@ const router = createRouter({
     },
     
     {
-      
+
       path: '/donate',
       name: 'donate',
       component: () => import('../views/DonateView.vue'),
@@ -51,8 +51,9 @@ const router = createRouter({
       component: () => import('../views/control-panel/DashboardView.vue'),
     },
     {
-      path: '/pageEdit',
+      path: '/pageEdit/:id',
       name: 'pageEdit',
+      props: true,
       component: () => import('../views/control-panel/pageEditView.vue'),
     },
 
