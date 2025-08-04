@@ -65,7 +65,7 @@ export default {
 
             <i
               title="Deleted"
-              class="fa-solid fa-trash text-red-400"
+              class="fa-solid fa-trash text-red-400 cursor-pointer"
               :idPage="page.id"
               @click="deletePage(page)"
             ></i>
@@ -75,9 +75,9 @@ export default {
 
          
 <!-- <RouterLink to="" -->
-            <i title="Edit" class="fa-solid fa-pen-to-square text-gray-500"></i>
+            <i title="Edit" class="fa-solid fa-pen-to-square text-gray-500 cursor-pointer"></i>
             <!-- add icon -->
-            <i title="Add" class="fa-solid fa-plus text-gray-500"></i>
+            <i title="Add" class="fa-solid fa-plus text-gray-500  cursor-pointer"></i>
           </th>
         </tr>
       </tbody>
