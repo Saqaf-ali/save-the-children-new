@@ -1,5 +1,7 @@
+let pagesId = 100;
 let pages = [
   {
+    id: ++pagesId,
     name: "Home",
     link: "/",
     title: "Save The Children",
@@ -7,6 +9,7 @@ let pages = [
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
   },
   {
+    id: ++pagesId,
     name: "Our Works",
     link: "/our-works",
     title: "Our Works",
@@ -14,8 +17,20 @@ let pages = [
     title: "Our Products",
     description: "lorem  ",
   },
-  { name: "About", link: "/about", title: "About Us", description: "" },
-  { name: "Contact", link: "/contact", title: "Contact Us", description: "" },
+  {
+    id: ++pagesId,
+    name: "About",
+    link: "/about",
+    title: "About Us",
+    description: "",
+  },
+  {
+    id: ++pagesId,
+    name: "Contact",
+    link: "/contact",
+    title: "Contact Us",
+    description: "",
+  },
 ];
 localStorage.setItem("pages", JSON.stringify(pages));
 
@@ -103,8 +118,6 @@ let aboutPage = {
       alt: "children are happy  ",
     },
   ],
-
-
 };
 
 localStorage.setItem("homePage", JSON.stringify(homePage));

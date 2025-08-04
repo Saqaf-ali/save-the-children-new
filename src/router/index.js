@@ -38,6 +38,18 @@ const router = createRouter({
       component: () => import('../views/RegisterView.vue'),
     },
     
+    {
+      path: '/donate',
+      name: 'donate',
+      component: () => import('../views/DonateView.vue'),
+    },
+    
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../views/DashboardView.vue'),
+    },
+
    
   ],
 
