@@ -2,12 +2,14 @@
 import IconsHeader from "./icons/IconsHeader.vue";
 import LogoBrand from "./LogoBrand.vue";
 import NavHeader from "./NavHeader.vue";
+import DarkModeToggle from "./DarkModeToggle.vue";
 
 export default {
   components: {
     LogoBrand,
     NavHeader,
     IconsHeader,
+    DarkModeToggle,
   },
 };
 </script>
@@ -24,7 +26,11 @@ export default {
 <!-- nav links -->
  <NavHeader/>
 <!-- icons -->
+<!-- <div class="flex items-center gap-4"> -->
  <IconsHeader/>
+ 
+
+<!-- </div> -->
 
 </div>
   </header>
