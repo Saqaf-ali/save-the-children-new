@@ -9,5 +9,4 @@ localStorage.setItem("iconsHeader", JSON.stringify(iconsHeader));
 
 console.log("header icons saved to local storage");
 console.log( JSON.parse(localStorage.getItem("iconsHeader")));
-
-
+// artist

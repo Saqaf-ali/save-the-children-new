@@ -1,5 +1,6 @@
 <script>
 import BtnSecondary from "@/components/BtnSecondary.vue";
+import FooterApp from "@/components/FooterApp.vue";
 
 import HeaderApp from "@/components/HeaderApp.vue";
 import HomeHero from "@/components/homeHero.vue";
@@ -21,6 +22,7 @@ export default {
     SectionTitle,
     ParagraphPrimary,
     PrimaryImage,
+    FooterApp
   },
 };
 </script>
@@ -60,4 +62,7 @@ export default {
     </div>
   </section>
   <!-- End about section -->
+
+   <!-- footer -->
+    <FooterApp/>
 </template>

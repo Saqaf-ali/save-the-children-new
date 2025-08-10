@@ -76,10 +76,12 @@
     </div>
   </section>
   <!-- End about section -->
+   <FooterApp/>
 </template>
 
 <script>
 import BtnSecondary from "@/components/BtnSecondary.vue";
+import FooterApp from "@/components/FooterApp.vue";
 import HeaderApp from "@/components/HeaderApp.vue";
 import ParagraphPrimary from "@/components/ParagraphPrimary.vue";
 import PrimaryImage from "@/components/PrimaryImage.vue";
@@ -105,6 +107,7 @@ export default {
     SectionTitle,
     ParagraphPrimary,
     PrimaryImage,
+    FooterApp
   },
 };
 </script>
