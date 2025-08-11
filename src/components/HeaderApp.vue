@@ -16,7 +16,7 @@ export default {
 
 <template>
   <header
-    class="header bg-black/60 text-white border-b border-fuchsia-200 shadow-lg lg:p-4"
+    class="header bg-black/60 text-white border-b border-fuchsia-200 shadow-lg  "
   >
     <div
       class="container flex flex-col lg:flex-row lg:justify-between items-center p-4 mx-auto lg:py-8"
