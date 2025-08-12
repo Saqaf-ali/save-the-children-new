@@ -1,0 +1,67 @@
+<script setup>
+import HeaderApp from '@/components/HeaderApp.vue';
+import SectionTitle from '@/components/SectionTitle.vue';
+
+HeaderApp
+</script>
+
+<template>
+
+    
+  <headerApp/>
+    <!-- Start contact section -->
+      <section class="contact my-4 h-full">
+           <SectionTitle
+        :content="'Contact Us'"
+        :textSize="'text-2xl md:text-3xl'"
+        :titleType="'h1'"
+      />
+    
+     
+          <ul class="textContent flex justify-start items-start flex-col space-y-12 bg-black/60 text-white rounded-xl container p-8 mx-auto text-sm leading-6 ">
+            <li ><p class="mainTextContact text-start">Our staffis working around the clock to receive your generous support and they are fully prepared to answer your inquiries and receive your suggestions through the website or phone number.</p></li>
+            <li  class="space-x-2">
+              <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Address:</span>
+              <p class="inline-block">Yemen, Sana'a, Al-Sabeen, Al-Masbah Street</p>
+           </li>
+            <li class="space-x-2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>Phone:</span>
+              <p class="inline-block">+967 775 082 462</p>
+            </li>
+            <li class="space-x-2  ">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>Email:</span>
+              <p class="inline-block"> 
+                <a href="mailto:info@example.com">savechildren@example.com</a>
+              </p>
+            </li>
+           </ul>
+
+      </section>
+<!-- End about section -->
+
+
+
+<!-- map -->
+      <section class="map text- w-full h-full container mx-auto p-4 bg-black/60 rounded-2xl my-8 text-white">
+         <!-- title -->
+      <SectionTitle
+        :content="'Our Location'"
+        :textSize="' md:text-2x'"
+        :titleType="'h2'"
+      />
+       
+
+  
+      
+             <iframe class="w-full h-80" frameborder="0"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15393.3060669567!2d44.1973964!3d15.3044806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603c5a1ef1bdfeb%3A0x6df7d7e7c69de373!2sSave%20The%20Children!5e0!3m2!1sar!2s!4v1753545015030!5m2!1sar!2s" 
+  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+   
+
+      </section>
+
+</template>

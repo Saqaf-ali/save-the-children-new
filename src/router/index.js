@@ -54,7 +54,7 @@ const router = createRouter({
       path: '/pageEdit/:id',
       name: 'pageEdit',
       props: true,
-      component: () => import('../views/control-panel/pageEditView.vue'),
+      component: () => import('../views/control-panel/PageEditView.vue'),
     },
 
    
