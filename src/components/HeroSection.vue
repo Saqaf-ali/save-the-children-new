@@ -12,13 +12,13 @@ export default {
 <template>
   <!-- Start hero -->
   
- <div class="hero  bg-black/60 text-white border-b-2 border-brand-red my-20 shadow-2xl ">
+ <div class="hero bg-[var(--bg-color)] text-black border-b-2 border-brand-red  shadow-2xl ">
 
     <div class=" container mx-auto p-4">
-              <h1 class="heroTitle text-3xl  md:text-4xl font-bold my-4 text-white"> {{ heroTitle }}</h1>
+              <h1 class="heroTitle text-2xl  md:text-3xl font-bold my-4"> {{ heroTitle }}</h1>
 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2  gap-4 p-4">
+    <div class="grid grid-cols sm:grid-cols-2  gap-4 p-4 grid-rows-2">
       <figure-primary
         v-for="img in heroImgs"
         :src="img.src"

@@ -61,14 +61,14 @@ let homePage = {
     {
       id: ++idHomeImg,
       src: "src/assets/images/articles/img7.webp",
-      alt: "children are happy  ",
+      alt: "figure-primary",
       figcaption:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
     },
     {
       id: ++idHomeImg,
       src: "src/assets/images/articles/img5.webp",
-      alt: "children are happy  ",
+      alt: "  ",
       figcaption: "Lorem ipsum dolor sit ametipsum dolor sit amet ",
     },
     {
