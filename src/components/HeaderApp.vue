@@ -9,14 +9,14 @@ export default {
     LogoBrand,
     NavHeader,
     IconsHeader,
-    DarkModeToggle,
+
   },
 };
 </script>
 
 <template>
   <header
-    class="header bg-[var(--bg-color)] border-b border-fuchsia-200 shadow-lg  "
+    class="header light:bg-white border-b border-fuchsia-200 shadow-lg dark:bg-gray-900 dark:border-gray-700 "
   >
     <div
       class="container flex flex-col lg:flex-row lg:justify-between items-center p-4 mx-auto lg:py-8"
@@ -28,7 +28,7 @@ export default {
 <!-- icons -->
 <!-- <div class="flex items-center gap-4"> -->
  <IconsHeader/>
- 
+ <DarkModeToggle/>
 
 <!-- </div> -->
 

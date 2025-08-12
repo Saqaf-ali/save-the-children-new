@@ -1,9 +1,11 @@
 <script>
+import DarkModeToggle from "../DarkModeToggle.vue";
 import Icons from "./Icons.vue";
 
 export default {
   components: {
     Icons,
+    DarkModeToggle,
   },
   props: ["iconTag", "link"],
   data() {
@@ -21,5 +23,6 @@ export default {
       :link="icon.link"
       :key="icon.name"
     />
+        <DarkModeToggle/>
   </div>
 </template>
