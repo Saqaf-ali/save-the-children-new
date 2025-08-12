@@ -20,36 +20,7 @@
       </p>
     </div>
   </div>
-  <!-- Start about section -->
-  <section class="py-12 md:py-20">
-    <div class="container mx-auto px-4">
-      <!-- title -->
-      <SectionTitle
-        :content="aboutPage.title"
-        :textSize="'text-3xl md:text-4xl'"
-        :titleType="'h1'"
-      />
-
-      <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- image -->
-        <PrimaryImage widthAndHeight:="'w-full h-full'"
-        :src="aboutPage.imgSection[0].src " :alt="aboutPage.imgSection[0].src
-        "/>
-        <div class="textContent md:text-left">
-          <ParagraphPrimary :paragraph="aboutPage.description" />
-          <BtnSecondary :buttonName="'More'" :link="'/about'" />
-        </div>
-        <div class="textContent md:text-left">
-          <ParagraphPrimary :paragraph="aboutPage.description" />
-          <BtnSecondary :buttonName="'More'" :link="'/about'" />
-        </div>
-        <!-- image -->
-        <PrimaryImage widthAndHeight:="'w-full h-full'"
-        :src="aboutPage.imgSection[1].src " :alt="aboutPage.imgSection[1].src
-        "/>
-      </article>
-    </div>
-  </section>
+ 
   <!-- End about section -->
 
   <!-- Start about section -->
@@ -65,7 +36,7 @@
       <article class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <!-- image -->
 
-        <PrimaryImage class="md:col-span-2" widthAndHeight:="'w-full h-full'"
+        <PrimaryImage class="md:col-span-2" widthAndHeight="w-full h-full"
         :src="aboutPage.imgsSection2[4].src "
         :alt="aboutPage.imgsSection2[4].alt " />
         <div class="textContent md:text-left">
@@ -76,6 +47,22 @@
     </div>
   </section>
   <!-- End about section -->
+   <!-- Start Our Partners Section -->
+  <section class="py-12 md:py-20">
+    <div class="container mx-auto px-4">
+      <SectionTitle
+        :content="'Our Partners'"
+        :textSize="'text-2xl md:text-3xl'"
+        :titleType="'h2'"
+      />
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+        <div v-for="partner in partners" :key="partner.name" class="flex justify-center">
+          <img :src="partner.logo" :alt="partner.name" class="h-16" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Our Partners Section -->
    <FooterApp/>
 </template>
 
@@ -92,7 +79,95 @@ export default {
     return {
       currentVideo: "",
       videos: ["/video1.mp4", "/video2.mp4", "/video3.mp4"],
-      aboutPage: JSON.parse(localStorage.getItem("aboutPage")),
+      aboutPage: JSON.parse(localStorage.getItem("aboutPage")) || {
+        title: "",
+        description: "",
+        imgSection: [
+          {
+            src: "",
+            alt: "",
+          },
+          {
+            src: "",
+            alt: "",
+          },
+        ],
+        imgsSection2: [
+          {
+            src: "",
+            alt: "",
+          },
+          {
+            src: "",
+            alt: "",
+          },
+          {
+            src: "",
+            alt: "",
+          },
+          {
+            src: "",
+            alt: "",
+          },
+          {
+            src: "",
+            alt: "",
+          },
+        ],
+      },
+      partners: [
+        {
+          name: "Red Cross",
+          logo: "https://tse2.mm.bing.net/th/id/OIP.amI6poGLXySW2td2qxc3owHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+        },
+        {
+          name: "UNICEF",
+          logo: "https://www.clipartmax.com/png/middle/480-4805590_humanitarian-aid-international-humanitarian-aid-organization.png",
+        },
+        {
+          name: "Doctors Without Borders",
+          logo: "https://th.bing.com/th/id/OIP.HNL-cEsZoFh4hiPzCbw8WAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+        },
+        {
+          name: "UNHCR",
+          logo: "https://th.bing.com/th/id/R.3ceae48531b092a6b584b84ec31f7eb1?rik=9NxkTP0FriAUuw&pid=ImgRaw&r=0",
+        },
+        {
+          name: "Word",
+          logo: "https://th.bing.com/th/id/OIP.d-JgpXNgafgdhgFVNkL48AHaHu?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+        },
+        {
+          name: "UNHCR",
+          logo: "https://th.bing.com/th/id/R.3ceae48531b092a6b584b84ec31f7eb1?rik=9NxkTP0FriAUuw&pid=ImgRaw&r=0",
+        },
+        {
+          name: "UNHCR",
+          logo: "https://th.bing.com/th/id/R.3ceae48531b092a6b584b84ec31f7eb1?rik=9NxkTP0FriAUuw&pid=ImgRaw&r=0",
+        },
+          {
+          name: "UNICEF",
+          logo: "https://www.clipartmax.com/png/middle/480-4805590_humanitarian-aid-international-humanitarian-aid-organization.png",
+        },
+        {
+          name: "Doctors Without Borders",
+          logo: "https://th.bing.com/th/id/OIP.HNL-cEsZoFh4hiPzCbw8WAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+        },
+          {
+          name: "UNICEF",
+          logo: "https://www.clipartmax.com/png/middle/480-4805590_humanitarian-aid-international-humanitarian-aid-organization.png",
+        },
+        {
+          name: "Doctors Without Borders",
+          logo: "https://th.bing.com/th/id/OIP.HNL-cEsZoFh4hiPzCbw8WAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+        },  {
+          name: "UNICEF",
+          logo: "https://www.clipartmax.com/png/middle/480-4805590_humanitarian-aid-international-humanitarian-aid-organization.png",
+        },
+        {
+          name: "Doctors Without Borders",
+          logo: "https://th.bing.com/th/id/OIP.HNL-cEsZoFh4hiPzCbw8WAHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+        },
+      ],
     };
   },
   mounted() {
