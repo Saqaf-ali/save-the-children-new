@@ -22,7 +22,7 @@ export default {
 
 <template>
   <!-- Start about section -->
-  <section class="py-12 md:py-20">
+  <section class="py-12 md:py-20 dark:bg-gray-700">
     <div class=" mx-auto px-4">
       <!-- title -->
       <SectionTitle
@@ -31,7 +31,7 @@ export default {
         :titleType="'h1'"
       />
 
-      <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-gray-700">
         <!-- image -->
         <PrimaryImage widthAndHeight:="'w-full h-auto'"
         :src="aboutPage.imgSection[0].src " :alt="aboutPage.imgSection[0].src

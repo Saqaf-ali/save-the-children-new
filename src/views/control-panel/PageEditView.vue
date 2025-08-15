@@ -99,9 +99,9 @@ export default {
   </div> -->
 
   <SectionTitle :title-type="'h1'" :text-size="'text-2xl md:text-3xl my-8'" :content="'Edit '+ getPage.name"/>
-  <div class="container p-4 bg-black/60 mx-auto" >
+  <div class="container p-4 mx-auto" >
   <div class="overflow-x-auto ">
-    <table class="table table-zebra ">
+    <table class="table table-zebra  bg-black/60 mt-8 mb-2">
       <!-- head -->
       <thead>
         <tr>
@@ -154,7 +154,7 @@ export default {
             ></i>
             <!-- edit icon -->
 
-            <EditRout :path="'/pageEdit'" :id="item.id" />
+            <!-- <EditRout :path="'/pageEdit'" :id="item.id" /> -->
 
            <Model />
 
@@ -162,6 +162,17 @@ export default {
         </tr>
       </tbody>
     </table>
+ 
   </div>
+     <!--instruction for use  -->
+     
+    <ul class="list-disc list-inside text-sm bg-black/60 p-4 mx-auto ">
+      <p class="mb-2 font-bold">instruction for use</p>
+      <li> To edit the content, click on the element and start typing</li>
+      <li> To delete the content, click on the delete icon </li>
+      <li> To add new element, click on the add icon </li>
+      <li>To save the changes, click out side the element </li>
+      
+    </ul>
   </div>
 </template>

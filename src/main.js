@@ -5,6 +5,8 @@ import App from './App.vue'
 import router from './router'
 import './assets/dataBase/create-data.js'
 import './assets/dataBase/Iconsdata.js'
+import './assets/dataBase/form.js'
+
 
 
 const app = createApp(App)

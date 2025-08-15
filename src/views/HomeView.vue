@@ -46,7 +46,7 @@ export default {
         <PrimaryImage widthAndHeight:="'w-full h-full'"
         :src="aboutPage.imgSection[0].src " :alt="aboutPage.imgSection[0].src
         "/>
-        <div class="textContent md:text-left">
+        <div class="textContent md:text-left ">
           <ParagraphPrimary :paragraph="aboutPage.description" />
           <BtnSecondary :buttonName="'More'"   :link="'/about'" />
         </div>

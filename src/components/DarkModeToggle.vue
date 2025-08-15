@@ -3,17 +3,17 @@ export default {
   data() {
     return {
       isDarkMode: this.getInitialDarkMode(),
-    };
+    }
   },
   methods: {
     toggleDarkMode() {
-      this.isDarkMode = !this.isDarkMode;
+      this.isDarkMode = !this.isDarkMode
       if (this.isDarkMode) {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add('dark')
+        localStorage.setItem('theme', 'dark')
       } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
+        document.documentElement.classList.remove('dark')
+        localStorage.setItem('theme', 'light')
       }
     },
     getInitialDarkMode() {
@@ -21,23 +21,23 @@ export default {
         const storedTheme = localStorage.getItem("theme");
         if (storedTheme === "dark") {
           return true;
-        }
-        if (storedTheme === "light") {
+        } else if (storedTheme === "light") {
           return false;
         }
       }
-      if (typeof window !== 'undefined' && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      if (
+        typeof window !== 'undefined' &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      ) {
         return true;
       }
       return false;
     }
   },
   mounted() {
+    // Apply the initial dark mode setting when the component is mounted
     if (this.isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-
+      document.documentElement.classList.add('dark')
     }
   },
 };

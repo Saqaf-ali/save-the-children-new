@@ -1,23 +1,24 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: [light, dark];
-}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+ @plugin "daisyui" {
+   themes: light --default, dark --prefersdark;
+ }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
   /* --bg-color:#e57373; */
 }
-body {
-  @apply bg-white text-gray-800;
-}
-
+/* body {
+  @apply ;
+} */
+/* 
 .dark body {
-  @apply  text-gray-100;
-}
+  @apply  text-gray-100 bg-black/60;
+}  */
 
-/* header{
+ header{
   @apply  shadow-sm;
 }
-.dark header{
-  @apply bg-gray-800;
+/* .dark header{
+  @apply bg-black/60;
 
 } */

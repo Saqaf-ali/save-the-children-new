@@ -33,7 +33,7 @@
         :titleType="'h2'"
       />
 
-      <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center ">
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center  ">
         <!-- image -->
 <div class="flex justify-center gap-2 items-center">
         <PrimaryImage class="" widthAndHeight=" w-1/2"

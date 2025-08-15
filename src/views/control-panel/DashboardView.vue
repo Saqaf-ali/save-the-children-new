@@ -2,6 +2,7 @@
 import HeaderApp from "@/components/HeaderApp.vue";
 import EditRout from "@/components/icons/EditRout.vue";
 import AlertSuccess from "@/components/notifications/AlertSuccess.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
 
 export default {
   data() {
@@ -16,6 +17,7 @@ export default {
     HeaderApp,
     AlertSuccess,
     EditRout,
+    SectionTitle
   },
   methods: {
     deletePage(page) {
@@ -48,8 +50,15 @@ export default {
     </RouterLink>
   </div> -->
 
-  <div class="overflow-x-auto" v-if="pages.length > 0">
-    <table class="table table-zebra">
+      <!-- title -->
+
+  <div class=" container mx-auto px-4 overflow-x-auto bg-black/60 my-8 " v-if="pages.length > 0">
+          <SectionTitle
+        :content="'Pages'"
+        :textSize="'text-3xl md:text-4xl'"
+        :titleType="'h1'"
+      />
+    <table class="table table-zebra my-8">
       <!-- head -->
       <thead>
         <tr>
