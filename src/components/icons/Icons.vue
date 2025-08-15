@@ -6,7 +6,7 @@ export default {
 };
 </script>
 <template>
-  <RouterLink :to="link" class="text-white hover:text-gray-400"
+  <RouterLink :to="link" class="text-white hover:text-gray-400 text-sm"
     ><i :class="iconTag"></i
   ></RouterLink>
 </template>

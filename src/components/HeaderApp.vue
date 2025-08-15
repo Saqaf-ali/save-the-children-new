@@ -19,7 +19,7 @@ export default {
     class="header light:bg-white border-b border-fuchsia-200 shadow-lg dark:bg-gray-900 dark:border-gray-700 "
   >
     <div
-      class=" w-full flex flex-col lg:flex-row lg:justify-between items-center p-4 mx-auto lg:py-8"
+      class=" w-full flex flex-col lg:flex-row lg:justify-between items-center p-4 mx-auto lg:py-8 "
     >
 <!-- logo brand -->
  <LogoBrand/>
