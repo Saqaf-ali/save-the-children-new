@@ -23,7 +23,7 @@ export default {
 <template>
   <!-- Start about section -->
   <section class="py-12 md:py-20">
-    <div class="container mx-auto px-4">
+    <div class=" mx-auto px-4">
       <!-- title -->
       <SectionTitle
         :content="aboutPage.title"

@@ -25,7 +25,7 @@
 
   <!-- Start about section -->
   <section class="py-12 md:py-20">
-    <div class="container mx-auto px-4">
+    <div class=" mx-auto px-4">
       <!-- title -->
       <SectionTitle
         :content="'Our Mission'"
@@ -33,23 +33,55 @@
         :titleType="'h2'"
       />
 
-      <article class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <article class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center ">
         <!-- image -->
-
-        <PrimaryImage class="md:col-span-2" widthAndHeight="w-full h-full"
+<div class="flex justify-center gap-2 items-center">
+        <PrimaryImage class="" widthAndHeight=" w-1/2"
         :src="aboutPage.imgsSection2[4].src "
         :alt="aboutPage.imgsSection2[4].alt " />
         <div class="textContent md:text-left">
           <ParagraphPrimary :paragraph="aboutPage.description" />
           <BtnSecondary :buttonName="'More'" :link="'/about'" />
         </div>
+      </div>
+   
+        <!-- image -->
+<div class="flex justify-center gap-2 items-center">
+        <PrimaryImage class="" widthAndHeight=" w-1/2"
+        :src="aboutPage.imgsSection2[4].src "
+        :alt="aboutPage.imgsSection2[4].alt " />
+        <div class="textContent md:text-left">
+          <ParagraphPrimary :paragraph="aboutPage.description" />
+          <BtnSecondary :buttonName="'More'" :link="'/about'" />
+        </div>
+      </div>
+        <!-- image -->
+<div class="flex justify-center gap-2 items-center">
+        <PrimaryImage class="" widthAndHeight=" w-1/2"
+        :src="aboutPage.imgsSection2[4].src "
+        :alt="aboutPage.imgsSection2[4].alt " />
+        <div class="textContent md:text-left">
+          <ParagraphPrimary :paragraph="aboutPage.description" />
+          <BtnSecondary :buttonName="'More'" :link="'/about'" />
+        </div>
+      </div>
+        <!-- image -->
+<div class="flex justify-center gap-2 items-center">
+        <PrimaryImage class="" widthAndHeight=" w-1/2"
+        :src="aboutPage.imgsSection2[4].src "
+        :alt="aboutPage.imgsSection2[4].alt " />
+        <div class="textContent md:text-left">
+          <ParagraphPrimary :paragraph="aboutPage.description" />
+          <BtnSecondary :buttonName="'More'" :link="'/about'" />
+        </div>
+      </div>
       </article>
     </div>
   </section>
   <!-- End about section -->
    <!-- Start Our Partners Section -->
   <section class="py-12 md:py-20">
-    <div class="container mx-auto px-4">
+    <div class="w-full mx-auto px-4">
       <SectionTitle
         :content="'Our Partners'"
         :textSize="'text-2xl md:text-3xl'"

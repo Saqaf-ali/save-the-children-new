@@ -14,8 +14,8 @@ export default {
   
  <div class="hero bg-[var(--bg-color)] text-black border-b-2 border-brand-red  shadow-2xl ">
 
-    <div class=" container mx-auto p-4">
-              <h1 class="heroTitle text-2xl  md:text-3xl font-bold my-4"> {{ heroTitle }}</h1>
+    <div class=" w-full mx-auto p-4">
+              <h1 class="heroTitle text-2xl  md:text-3xl font-bold my-4 text-center"> {{ heroTitle }}</h1>
 
 
     <div class="grid grid-cols sm:grid-cols-2  gap-4 p-4 grid-rows-2">

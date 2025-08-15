@@ -63,7 +63,7 @@ let homePage = {
       src: "src/assets/images/articles/img7.webp",
       alt: "figure-primary",
       figcaption:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
+        " Maiores explicabo consequatur animi tempore ut ",
     },
     {
       id: ++idHomeImg,
@@ -82,7 +82,7 @@ let homePage = {
       src: "src/assets/images/articles/img4.webp",
       alt: "children are happy  ",
       figcaption:
-        "Lorem ipsum dolor sit ametconsectetur adipisicing elit. Maiores explicabo consequatur animi tempore ut ",
+        "Lorem ipsum dolor sit  Maiores explicabo consequatur animi tempore ut ",
     },
   ],
 };
