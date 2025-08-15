@@ -30,7 +30,7 @@ export default {
       :titleType="'h1'"
     />
     <form class=" bg-black/60 w-full max-w-sm rounded-md shadow-md p-6">
-      <div class="mb-4 ">
+      <div class="mb-4">
         <!-- inputs -->
 
         <InputForm

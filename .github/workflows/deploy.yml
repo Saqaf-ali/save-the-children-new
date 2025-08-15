@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # Runs on pushes to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # The OS for the workflow
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Fetches your repo code
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20  # Uses Node.js 20
+
+      - name: Install dependencies
+        run: npm install  # Installs npm packages
+
+      - name: Build project
+        run: npm run build  # Builds your Vue app (creates /dist folder)
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # Deploys to GH Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated token
+          publish_dir: ./dist  # Publishes the 'dist' folder
