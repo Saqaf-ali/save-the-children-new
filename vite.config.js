@@ -11,6 +11,15 @@ export default defineConfig({
     vueDevTools(),
        tailwindcss(),
   ],
+  publicDir: 'public',
+  base: '/save-the-children-new/',
+  build: {
+    assetsInclude: ['**/*.webp', '**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg' ],
+    outDir: 'dist',
+    
+  },
+  
+  
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

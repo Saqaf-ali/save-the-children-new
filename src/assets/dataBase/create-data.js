@@ -60,26 +60,26 @@ let homePage = {
   heroImgs: [
     {
       id: ++idHomeImg,
-      src: "src/assets/images/articles/img7.webp",
+      src: "/assets/images/articles/img7.webp",
       alt: "figure-primary",
       figcaption:
         " Maiores explicabo consequatur animi tempore ut ",
     },
     {
       id: ++idHomeImg,
-      src: "src/assets/images/articles/img5.webp",
+      src: "/assets/images/articles/img5.webp",
       alt: "  ",
       figcaption: "Lorem ipsum dolor sit ametipsum dolor sit amet ",
     },
     {
       id: ++idHomeImg,
-      src: "src/assets/images/articles/img8.webp",
+      src: "/assets/images/articles/img8.webp",
       alt: "children are happy  ",
       figcaption: "Lorem ipsum dolor sit amet ",
     },
     {
       id: ++idHomeImg,
-      src: "src/assets/images/articles/img4.webp",
+      src: "/assets/images/articles/img4.webp",
       alt: "children are happy  ",
       figcaption:
         "Lorem ipsum dolor sit  Maiores explicabo consequatur animi tempore ut ",
@@ -98,39 +98,39 @@ let aboutPage = {
   imgSection: [
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img3.webp",
+      src: "/assets/images/about/img3.webp",
       alt: "children are happy  ",
     },
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img2.webp",
+      src: "/assets/images/about/img2.webp",
       alt: "children are happy  ",
     },
   ],
   imgsSection2: [
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img3.webp",
+      src: "/assets/images/about/img3.webp",
       alt: "children are happy  ",
     },
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img4.webp",
+      src: "/assets/images/about/img4.webp",
       alt: "children are happy  ",
     },
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img5.webp",
+      src: "/assets/images/about/img5.webp",
       alt: "children are happy  ",
     },
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img6.webp",
+      src: "/assets/images/about/img6.webp",
       alt: "children are happy  ",
     },
     {
       id: ++idAboutImg,
-      src: "src/assets/images/about/img7.webp",
+      src: "/assets/images/about/img7.webp",
       alt: "children are happy  ",
     },
   ],
