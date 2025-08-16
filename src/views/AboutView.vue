@@ -91,7 +91,7 @@ export default {
   data() {
     return {
       currentVideo: "",
-      videos: ["assets/video1.mp4", "assets/video2.mp4", "assets/video3.mp4"],
+      videos: ["../assets/video1.mp4", "../assets/video2.mp4", "../assets/video3.mp4"],
       aboutPage: JSON.parse(localStorage.getItem("aboutPage")),
     };
   },
