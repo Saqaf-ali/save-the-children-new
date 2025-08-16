@@ -122,7 +122,7 @@ export default {
               <div
                 class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2"
               >
-                <img :src="'../../../' + item.src" alt="hero image" />
+                <img :src=" item.src" alt="hero image" />
               </div>
             </div>
           </th>
