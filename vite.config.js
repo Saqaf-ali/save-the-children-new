@@ -12,7 +12,7 @@ export default defineConfig({
        tailwindcss(),
   ],
   publicDir: 'public',
-  base: '/save-the-children-new/',
+  base: 'save-the-children-new/',
   build: {
     assetsInclude: ['**/*.webp', '**/*.svg', '**/*.png', '**/*.jpg', '**/*.jpeg' ],
     outDir: 'dist',

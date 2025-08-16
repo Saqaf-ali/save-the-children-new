@@ -9,5 +9,6 @@ export default{
     <img :class="widthAndHeight + ' rounded-lg shadow-md align-center'"
           :src="src"
           :alt="alt"
+        loading="lazy"
         />
 </template>
